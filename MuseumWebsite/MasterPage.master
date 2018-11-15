@@ -1,0 +1,69 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="CSS/StyleSheet.css" rel="stylesheet" />
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <header>
+            <h1>Vikingemuseet</h1>
+
+        </header>
+
+        <div id="NK">
+
+            <nav>
+                <ul>
+                    <li><a href="01Default.aspx">Forside</a></li>
+                    <li><a href="02Thema.aspx">Temaer</a></li>
+                    <li><a href="05Rundvising.aspx">Rundvisning</a></li>
+                    <li><a href="06kontakt.aspx">Kontakt</a></li>
+                </ul>
+                <div id="searchy">
+                    <asp:TextBox ID="txtSearch" runat="server" placeholder="Søg" />
+                    <asp:Button ID="btnSearch" Text="Søg" runat="server" OnClick="btnSearch_Click" />
+                </div>
+            </nav>
+
+        </div>
+
+
+        <div id="contentWrapper">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <footer>
+            <div id="footerLeft">
+                <asp:Literal ID="litAdress" runat="server"></asp:Literal>
+            </div>
+            <div id="footerCenter">
+                <asp:Literal ID="litTid" runat="server"></asp:Literal>
+            </div>
+            <div id="footerRight">
+                <a href="http://www.moesgaardmuseum.dk/" target="_blank">
+                    <img id="first" src="Img/logo.png" alt="Moesgaard Museum Logo" />
+                </a>
+
+                <a href="https://www.facebook.com/pages/Moesg%C3%A5rd-Museum/135140269851043?fref=ts" target="_blank">
+                    <img class="logo1" src="Img/Ikon/Facebook.png" alt="Facebook Icon" />
+                </a>
+
+                <a href="https://www.instagram.com/moesgaardmuseum/?hl=da" target="_blank">
+                    <img class="logo" src="Img/Ikon/Instagram.png" alt="Instagram Icon" />
+                </a>
+
+                <a href="mailto:INFO@MOESGAARDMUSEUM.DK" target="_blank">
+                    <img class="logo" src="Img/Ikon/Email.png" alt="E-mail Icon" />
+                </a>
+            </div>
+        </footer>
+    </form>
+</body>
+</html>

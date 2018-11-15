@@ -1,0 +1,34 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="ADMIN_Admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Viking Museum Admin</title>
+    <link href="../CSS/Admin.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="adminHeader">
+            <asp:Literal ID="litLogin" runat="server"></asp:Literal>
+            <h1>VikingMuseet Admin Page</h1>
+            <div id="adminNav">
+                <ul>
+                    <li><a href="10RetThema.aspx">Ret</a></li>
+                    <li><a href="11SletThema.aspx">Slet</a></li>
+                    <li><a href="09OpretThema.aspx">Opret</a></li>
+                    <li><a href="12RetKontakt.aspx?KontaktID=1">Ret Kontakt</a></li>
+                </ul>
+
+                <asp:Button ID="btnLogout" runat="server" Text="Log UD!" OnClick="btnLogout_Click" />
+            </div>
+        </div>
+        <div id="adminWrapper">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

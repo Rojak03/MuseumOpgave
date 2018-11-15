@@ -1,0 +1,106 @@
+﻿body {
+}
+
+#adminHeader {
+    width: 100%;
+    height: 80px;
+    border: 2px solid black;
+}
+
+    #adminHeader h1 {
+        width: 30%;
+        float: left;
+        margin-left: 38%;
+    }
+
+#adminNav {
+    width: 20%;
+    float: left;
+}
+
+    #adminNav ul {
+        width: 90%;
+        margin: 32px auto;
+        clear: both;
+    }
+
+        #adminNav ul li {
+            display: inline-block;
+            margin-left: 10px;
+        }
+
+    #adminNav input[type= submit] {
+        position: relative;
+        top: -51px;
+        left: 500px;
+    }
+
+#adminWrapper {
+    clear: both;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+    #adminWrapper h2 {
+        width: 39%;
+        margin: 70px auto;
+        font-size: 30px;
+    }
+
+    #adminWrapper #ContentPlaceHolder1_pnlRetteSelect {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    #adminWrapper #retThema {
+        width: 27%;
+        margin: 70px auto;
+        font-size: 30px;
+    }
+
+    #adminWrapper .deleteBox {
+        width: 37%;
+        float: left;
+        height: 80px;
+        border: 1px solid #000000;
+        margin-right: 30px;
+        margin-left: 30px;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+#sletThema {
+    margin: 0 auto;
+    width: 55%;
+}
+
+#opret {
+    width: 29%;
+    height: 181px;
+    border: 1px solid #000000;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+    #opret span {
+        margin-left: 100px;
+    }
+
+#RetBox {
+    width: 40%;
+    max-height: 1000px;
+    border: 1px solid black;
+    margin: 40px auto;
+}
+
+    #RetBox > * {
+        display: inline-block;
+    }
+
+    #RetBox span {
+        margin-left: 100px;
+    }
+
+    #RetBox input, textarea {
+    }
